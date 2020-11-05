@@ -119,6 +119,26 @@ img{
 .ml-3{
   margin-left: 24px;
 }
+/* Flex */
+.d-flex{
+  display: flex;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+
 body{
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
@@ -133,18 +153,10 @@ body{
   background-size: cover;
   background-image: url(../img/banner.png);
   height: 958px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .banner h1{
   font-size: 80px;
   line-height: 94px;
-}
-.fas{
-  display: flex;
-  justify-content: space-between;
 }
 .fas img{
   width: 60px;
@@ -188,11 +200,6 @@ body{
   text-align: center;
   padding: 64px 0 160px 0;
 }
-.myBrandImg{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .myBrandImg .col-12{
   width: 792px;
 }
@@ -203,10 +210,6 @@ body{
 /* otherWorks */
 .otherWorks{
   text-align: center;
-}
-.otherWorksItem{
-  display: flex;
-  flex-wrap: wrap;
 }
 .otherWorksItem .col-4{
   width: 384px;
