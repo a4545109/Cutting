@@ -1,0 +1,178 @@
+body{
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header */
+.header{
+  padding: 30px 88px;
+}
+.logo{
+  width: 80px;
+}
+.navbar li{
+  margin-left: 64px;
+}
+@media screen and (max-width:768px){
+  .header{
+    padding: 30px 39px;
+  }
+  .navbar li{
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width:375px){
+  .logo{
+    margin: 0 auto;
+    width: 48px;
+    padding: 10px 0;
+  }
+  .header{
+    padding: 0px 0px;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .navbar li{
+    text-align: center;
+    width: 50%;
+    margin-left: 0;
+    padding: 8px 54px;
+    border: 1px solid #fff;
+  }
+}
+/* footer */
+.footer{
+  position: relative;
+}
+.footerText{
+  padding: 48px 0 22px 0;
+}
+.footerNav li{
+  margin-right: 40px;
+}
+.contact .tel{
+  margin-bottom: 17px;
+}
+.contact .telImg{
+  width: 44px;
+  margin-right: 17px;
+}
+.contact .mailImg{
+  width: 48px;
+  margin-right: 12px;
+}
+.fas img{
+  width: 48px;
+}
+.fas{
+  padding-top: 36px;
+}
+.fas li{
+  margin-left: 32px;
+}
+.footerBorder{
+  height: 1px;
+  background-color: #fff;
+}
+.copyright{
+  padding: 24px 0 28px 0;
+}
+.copyright .logo{
+  margin-right: 38px;
+}
+.terms h5{
+  margin-left: 62px;
+}
+.bottomLogo{
+  position: absolute;
+  right: 15px;
+  bottom: 21px;
+  display: none;
+}
+@media screen and (max-width:768px){
+  .container{
+    max-width: 690px;
+  }
+  .footerNav{
+    margin-bottom: 29px;
+  }
+  .footerText{
+    padding: 40px 0 27px 0px;
+  }
+  .fas{
+    padding-top: 40px;
+  }
+  .fas li{
+    margin-left: 24px;
+  }
+  .fas img{
+    width: 24px;
+  }
+  .contact{
+    font-size: 20px;
+  }
+  .contact .telImg{
+    width: 24px;
+    margin-right: 12px;
+  }
+  .contact .mailImg{
+    width: 32px;
+    margin-right: 8px;
+  }
+  .terms h5{
+    margin-left: 24px;
+  }
+  .copyright .logo{
+    display: none;
+  }
+}
+@media screen and (max-width:375px){
+  .container{
+    max-width: 345px;
+  }
+  .footerNav{
+    display: none;
+  }
+  .contact{
+    font-size: 16px;
+  }
+  .contact .telImg{
+    width: 20px;
+    margin-right: 4px;
+  }
+  .contact .mailImg{
+    width: 20px;
+    margin-right: 5px;
+  }
+  .copyright span{
+    margin-bottom: 7px;
+  }
+  .copyright{
+    padding: 18px 0 25px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copyright .logo{
+    margin-left: 0;
+  }
+  .terms{
+    flex-direction: column;
+  }
+  .terms .policy{
+    margin-bottom: 8px;
+  }
+  .terms h5{
+    margin-left: 0;
+  }
+  .bottomLogo{
+    display: block;
+    width: 46px;
+  }
+}
