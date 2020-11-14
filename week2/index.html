@@ -8,9 +8,9 @@
 </head>
 <body>
   <!-- banner -->
-  <div class="banner d-flex flex-column align-items-center justify-content-center text-white fs-italic mb-8">
+  <div class="banner d-flex align-items-center justify-content-center text-white fs-italic mb-8">
     <div class="bannerContent">
-      <p class="fs-6 lh-14">Here’s</p>
+      <span class="fs-6 lh-14">Here’s</span>
       <h1 class="mb-4 fs-w">JOANNE</h1>
       <p class="fs-6 mb-6">Founder of “XXXD Official’’<br> & Graphic Designer</p>
       <ul class="fas d-flex justify-content-between">
@@ -23,68 +23,73 @@
   </div>
   <!-- about -->
   <div class="about fs-italic">
-    <div class="aboutContent">
-      <h2 class="fs-16 lh-25 mb-5 fs-w">About</h2>
-      <img class="mb-3" src="./img/photo.png" alt="大頭貼">
-      <h3 class="fs-6 lh-14 mb-1">Joanne Chen</h3>
-      <p class="fs-6 lh-14 mb-1">1997/10/10</p>
-      <p class="aboutText fs-6 lh-12">National Hex School Normal University<br>Department of Visual Design</p>
-      <div class="about-border mb-4"></div> 
-      <!-- ↑為什麼這邊用共用類別 mb-4 會沒有作用呢? 要用 css 設定才有效果-->
-      <ul class="aboutItem fs-6 lh-14">
-        <li class="mb-4">Founder of ‘’XXXD Official’’</li>
-        <li class="mb-4">Graphic Designer</li>
-        <li class="mb-7">Graphic Intern of Hex School</li>
-      </ul>
-    </div>
+    <h2 class="fs-16 lh-25 mb-5 fs-w">About</h2>
+    <img src="./img/photo.png" alt="大頭貼">
+    <h3 class="fs-6 lh-14 mb-1">Joanne Chen</h3>
+    <p class="fs-6 lh-14 mb-1">1997/10/10</p>
+    <p class="aboutText fs-6 lh-12">National Hex School Normal University<br>Department of Visual Design</p>
+    <hr class="about-border">  
+    <ul class="aboutItem fs-6 lh-14">
+      <li class="mb-4">Founder of ‘’XXXD Official’’</li>
+      <li class="mb-4">Graphic Designer</li>
+      <li class="mb-7">Graphic Intern of Hex School</li>
+    </ul>
   </div>
   <!-- myBrand -->
   <div class="myBrand text-white mb-8">
-    <h2 class="fs-16 lh-25 mb-2 fs-italic fs-w">My Brand ‘’XXXD’’</h2>
-    <p class="fs-6 lh-14 mb-4">Just Keep XXXD Everyday</p>
-    <p class="fs-5 lh-10 mb-8">2020 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流T-Shirt</p>
-    <div class="myBrandImg container d-flex flex-wrap justify-content-center">
-      <img class="col-12 mb-5" src="./img/brand_img1.png" alt="品牌圖片">
-      <img class="col-6" src="./img/brand_img2.png" alt="品牌圖片">
-      <img class="col-6 ml-3" src="./img/brand_img3.png" alt="品牌圖片">
+    <div class="container">
+      <h2 class="fs-16 lh-25 mb-2 fs-italic fs-w">My Brand ‘’XXXD’’</h2>
+      <h3 class="fs-6 lh-14 mb-4">Just Keep XXXD Everyday</h3>
+      <p class="fs-5 lh-10 mb-8">2020 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流T-Shirt</p>
+      <ul class="myBrandImg d-flex flex-wrap justify-content-center">
+        <li class="col-12 mb-5">
+          <img src="./img/brand_img1.png" alt="品牌圖片">
+        </li>
+        <li class="col-6">
+          <img src="./img/brand_img2.png" alt="品牌圖片">
+        </li>
+        <li class="col-6 ml-3">
+          <img src="./img/brand_img3.png" alt="品牌圖片">
+        </li>        
+      </ul>
     </div>
   </div>
   <!-- otherWorks -->
   <div class="otherWorks container">
     <h2 class="fs-16 lh-25 mb-3 fs-italic fs-w">Other Works</h2>
     <p class="fs-5 lh-10 mb-7">2016-2020 年累積的作品<br>海報/廣告/攝影/LOGO/3D</p>
-    <ul class="otherWorksItem d-flex flex-wrap">
+    <ul class="otherWorksItem d-flex justify-content-between flex-wrap">
       <li class="col-4">
         <img class="mb-2" src="./img/work_img1.png" alt="海報">
-        <h2>海報設計/2017</h2>
+        <h3>海報設計/2017</h3>
       </li>
-      <li class="col-4 ml-3 mb-7">
+      <li class="col-4 mb-7">
         <img class="mb-2" src="./img/work_img2.png" alt="海報">
-        <h2>海報設計/2018</h2>
+        <h3>海報設計/2018</h3>
       </li>
-      <li class="col-4 ml-3">
+      <li class="col-4">
         <img class="mb-2" src="./img/work_img3.png" alt="海報">
-        <h2>海報設計/2018</h2>
+        <h3>海報設計/2018</h3>
       </li>
       <li class="col-6">
         <img class="mb-2" src="./img/work_img4.png" alt="海報">
-        <h2>概念攝影/2018</h2>
+        <h3>概念攝影/2018</h3>
       </li>
-      <li class="col-6 ml-3 mb-7">
+      <li class="col-6 mb-7">
         <img class="mb-2" src="./img/work_img5.png" alt="海報">
-        <h2>概念攝影/2018</h2>
+        <h3>概念攝影/2018</h3>
       </li>
       <li class="col-4 mb-20">
         <img class="mb-2" src="./img/work_img6.png" alt="海報">
-        <h2>sasa 酒標設計/2019</h2>
+        <h3>sasa 酒標設計/2019</h3>
       </li>
-      <li class="col-4 ml-3">
+      <li class="col-4">
         <img class="mb-2" src="./img/work_img7.png" alt="海報">
-        <h2>攝影創作/2018</h2>
+        <h3>攝影創作/2018</h3>
       </li>
-      <li class="col-4 ml-3">
+      <li class="col-4">
         <img class="mb-2" src="./img/work_img8.png" alt="海報">
-        <h2>官網設計/2020</h2>
+        <h3>官網設計/2020</h3>
       </li>
     </ul>
   </div>

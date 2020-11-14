@@ -158,20 +158,14 @@ body{
   font-size: 80px;
   line-height: 94px;
 }
-.fas img{
-  width: 60px;
-}
 /* about */
 .about{
   text-align: center;
 }
-.aboutContent{
-  width: 412px;
-  margin: 0 auto;
-}
 .about img{
   width: 384px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 .aboutText{
   padding-bottom: 24px;
@@ -180,9 +174,10 @@ body{
   width: 384px;
   height: 1px;
   margin: 0 auto;
+  margin-bottom: 32px;  
+  /* ↑為什麼這邊用共用類別 mb-4 會沒有作用呢? 要用 css 設定才有效果 */
+  /* 原因是因為你在裡面設定了 margin: 0 auto; 覆蓋掉了比他前面設定的 CSS .mb-4 哦 */
   background-color: #000;
-  /* margin-bottom: 32px;   */
-   /* ↑為什麼這邊用共用類別 mb-4 會沒有作用呢? 要用 css 設定才有效果 */
 }
 .aboutItem li:before{
   content: "";
