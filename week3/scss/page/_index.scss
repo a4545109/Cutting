@@ -1,73 +1,287 @@
+.indexSeriesTitle,
+.indexJointTitle,
+.indexCustomerTitle,
+.indexContactTitle,
+.sectionTitle{
+  line-height: 67px;
+}
+
 // banner
 .banner{
   height: 840px;
-  background-image:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png");  
-  background-position: center;
-  background-size: cover;
+  background-image:url("../img/banner.png");  
+  .container{
+    height: 840px;
+  }
+@include mobile(){
+  height: 394px;
+  .container{
+    height: 394px;
+  }
 }
-.banner .container{
-  height: 840px;
-}
-.bannerText p{
-  text-align: end;
+  .bannerText{
+    p{
+      text-align: end;
+      line-height: 50px;
+    }
+    h2{
+      line-height: 90px;
+      @include pad(){
+        line-height: 67px;
+      }
+    }
+    @include mobile(){
+      p{
+        line-height: 22px;
+      }
+      h2{
+        line-height: 45px;
+      }
+    }
+  } 
 }
 // section
 .section{
   padding: 64px 0 80px 0;
+  .sectionContent{
+    align-items: baseline;
+  }
+  .sectionItem{
+    width: 19%;
+    img{
+      margin: 0px auto 40px auto;
+    }
+    h3{
+      line-height: 33px;
+    }
+  }
+@include pad(){
+  padding: 40px 0 80px 0;
+  .sectionTitle{
+    line-height: 45px;
+  }
+  .sectionItem{
+    width: 34.34%;
+    h3{
+      line-height: 28px;
+    }
+    img{
+      margin-bottom: 16px;
+    }
+  }
 }
-.sectionItem{
-  align-items: baseline;
+@include mobile(){
+  padding: 32px 0 52px 0;
+  .sectionTitle{
+    line-height: 33px;
+  }
+  .sectionItem{
+    margin: 0 auto;
+    width: 68.7%;
+    img{
+      width: 80px;
+    }
+  }
 }
-.sectionItem li{
-  width: 25%;
-}
-.sectionItem img{
-  margin: 0 auto;
-  margin-bottom: 40px;
 }
 
 // indexSeries
 .indexSeries{
-  margin-bottom: 80px;
+  .indexSeriesItem{
+    .icon{
+      width: 48px;
+    }
+  } 
+  .indexSeriesItem:nth-child(2) h2{
+    margin-right: 30px;
+  }
+  .seriesItemImg{
+    max-width: 57.7%;
+  }
+  .indexSeriesText img{
+    margin-left: 30px;
+  }
+@include pad(){
+  .seriesItemImg{
+    margin-left: 0;
+  }
+  .indexSeriesItem .icon{
+    width: 32px;
+  }
+  .indexSeriesText h2{
+    line-height: 37px;
+  }
 }
-.indexSeriesItem .icon{
-  width: 48px;
+@include mobile(){
+  .indexSeriesTitle{
+    line-height: 45px;
+  }
+  .seriesItemImg{
+    max-width: 100%;
+  }
+  .indexSeriesItem{
+    position: relative;    
+    color: #fff;
+  }
+  .indexSeriesText{
+    position: absolute;
+    img{
+      margin-left: 0;
+    }
+    h2{
+      line-height: 63px;
+    }
+  }
+  .seriesItemImg{
+    margin-right: 0;
+  }
 }
-.indexSeriesItem .SeriesItemImg{
-  max-width: 635px;
 }
 
 // indexJoint
 .indexJoint{
   padding: 64px 0 80px 0;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png");
+  background-image: url("../img/bg.png");
+  .jointItem{
+    line-height: 95px;
+    width: 50%;
+    position: relative;
+    h2{
+      z-index: 99;
+      position: absolute;
+    }
+  }
+  .jointItem:nth-child(1){
+    margin-right: 30px;
+  }
+  .transparent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 50%;
+  }
+@include pad(){
+  padding: 40px 0 40px 0;
+  .indexJointTitle{
+    line-height: 45px;
+  }
 }
-.jointContent .jointItem{
-  line-height: 95px;
-  width: 50%;
-  padding: 188px 0 189px 0;
+@include mobile(){
+  padding: 32px 0 32px 0;
+  .indexJointTitle{
+    line-height: 28px;
+  }
+  .jointItem{
+    width: 100%;
+  }
+}
 }
 
 // indexCustomer
-.customerItem{
-  box-shadow: 1px 2px 2px 2px #DEE2E6;
-  margin-bottom: 64px;
+.indexCustomer{
+  .customerItem{
+    width: 23.18%;
+    img{
+      width: 100%;
+    }
+  }
+  .customerText{
+    box-shadow: 1px 1px 1px 1px #DEE2E6;
+    padding: 14px 16px 15px 16px;
+    h2{
+      margin-bottom: 7px;
+    }
+    h2,span{
+      font-size: 14px;
+      line-height: 19px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+  }
+@include pad(){
+  .indexCustomerTitle{
+    line-height: 45px;
+  }
+  .customerItem{
+    width: 47.8%;
+  }
+}
+@include mobile(){
+  .indexCustomerTitle{
+    line-height: 28px;
+  }
+  .customerItem{
+    width: 100%;
+  }
+}
 }
 
 // indexContact
-.contactContent{
-  padding: 64px 0 80px 0;
+.indexContact{
+  .contactContent{
+    padding: 64px 0 80px 0;
+    label,
+    input,
+    textarea,
+    .send{
+      line-height: 22px;
+    }
+    p{
+      line-height: 30px;
+    }
+    form{
+      width: 66.36%;
+      margin: 0 auto;
+    }
+    input{
+      padding: 14px 16px;
+    }
+    textarea{
+      padding: 14px 0 100px 16px;
+    }
+    .send{
+      padding: 16px 0;
+      border: 0px;
+      width: 48%;
+      margin: 0 auto;
+    }
+  }
+  .agreeGroup{
+    margin-bottom: 42px;
+  }
+@include pad(){
+  .indexContactTitle{
+    line-height: 45px;
+  }
+  .contactContent{
+    padding: 40px 0;
+    p{
+      line-height: 24px;
+    }
+    form{
+      width: 100%;
+    } 
+    .send{
+      padding: 8px 0;
+    }
+  }
+  .agreeGroup{
+    margin-bottom: 20px;
+  }
 }
-.contactContent form{
-  width: 66%;
-  margin: 0 auto;
+@include mobile(){
+  .contactContent{
+    padding: 32px 0;
+  }
+  .indexContactTitle{
+    line-height: 28px;
+  }
+  .agreeGroup{
+    margin-bottom: 24px;
+  }
 }
-.contactContent p{
-  margin-bottom: 20px;
-}
-.contactContent .send{
-  padding: 16px 0;
-  border: 0px;
-  width: 48%;
-  margin: 0 auto;
 }
